@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Writing</title>
+    <style>
+        body {
+            background-color: #FFC196;
+        }
+
+        p, label {
+            font-family: verdana, sans-serif;
+        }
+
+        button {
+            background-color: #ffffff;
+            border: none;
+            border-style: round;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Creative Writing</h1>
-    <p>Welcome to my fellow <i>creative writers</i>!</p>
-    <br>
+    <header>
+        <h1>Creative Writing</h1>
+        <nav>
+            <ul>
+                <li><a href="">Fluff</a></li>
+                <li><a href="">Angst</a></li>
+                <li><a href="">Romance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Welcome to my fellow <i>writers</i>!</p>
     <p>This is a safe place for anyone who got that creative drive in them!</p>
+    <form action="">
+        <p>For of all, what kind of writer do you consider yourself as?</p>
+        <input type="radio" id="radio_1" name="kind_of_writer">
+        <label for="radio_1">Creative writer</label> <br>
+        <input type="radio" id="radio_2" name="kind_of_writer">
+        <label for="radio_2">Non-creative writer</label> <br>
+        <input type="radio" id="radio_3" name="kind_of_writer">
+        <label for="radio_3">Fanwriter (I know I know, a whole category on its own)</label> <br>
+    </form>
+    <section>
+        <p>Good! Now let's add some writer's resources!</p>
+        <p>Writer resource 1</p>
+        <button type="button" class="btn btn-outline-primary">First writer resource!</button>
+        <p>Writer resource 2</p>
+        <button type="button" class="btn btn-info">Second writer resource!</button>
+        <p>Writer resource 3</p>
+        <button type="button" class="btn btn-success">Third writer resource!</button>
+        <p>Writer resource 4</p>
+        <button type="button" class="btn btn-warning">Fourth writer resource!</button>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
